@@ -30,7 +30,7 @@ from mediapipe.tasks.python import vision
 # CONFIGURATION
 # -----------------------------------------------
 
-MODEL_PATH = Path("SVC_1069.pkl")
+MODEL_PATH = Path("Model(SVC)")
 LANDMARKER_PATH = Path("hand_landmarker.task")
 
 CAMERA_INDEX = 0
@@ -63,7 +63,7 @@ def load_model():
     if not MODEL_PATH.exists():
         raise FileNotFoundError(
             f"Model not found: {MODEL_PATH}\n"
-            "Put SVC_ASL_469.pkl in the same folder as this script."
+            "Put Moddel(SvC) in the same folder as this script."
         )
 
     model = joblib.load(MODEL_PATH)
